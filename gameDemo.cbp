@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="gameDemo" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/gameDemo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="sdllib/SDL_1_2_15/include" />
+					<Add directory="sdllib/SDL_image_1_2_4/include" />
+					<Add directory="sdllib/SDL_mixer_1_2_12/include" />
+					<Add directory="sdllib/SDL2_ttf_2_0_11/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lmingw32 -lSDLmain -lSDL" />
+					<Add option="-lSDL_image" />
+					<Add directory="sdllib/SDL_1_2_15/lib/x86" />
+					<Add directory="sdllib/SDL_image_1_2_4/lib" />
+					<Add directory="sdllib/SDL_mixer_1_2_12/lib/x86" />
+					<Add directory="sdllib/SDL2_ttf_2_0_11/lib/x86" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/gameDemo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="BaseObject.cpp" />
+		<Unit filename="BaseObject.h" />
+		<Unit filename="Bird.cpp" />
+		<Unit filename="Bird.h" />
+		<Unit filename="common_function.cpp" />
+		<Unit filename="common_function.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="threat_object.cpp" />
+		<Unit filename="threat_object.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
